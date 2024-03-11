@@ -1,73 +1,3 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/
-
 body {
   background-color: hsl(0, 0%, 10%);
 }
@@ -139,45 +69,45 @@ li {
 }
 /* navbar */
 .navbar {
-  background-color: #203040; /* Change background color as desired */
-  color: #fff; /* Change text color as desired */
-  display: flex; /* Arrange elements horizontally */
-  justify-content: space-between; /* Distribute space between elements */
-  align-items: center; /* Vertically center elements */
-  padding: 1rem 2rem; /* Add padding for spacing */
+  background-color: #203040; 
+  color: #fff; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
 }
 
 .container {
-  display: flex; /* Container for better layout */
-  align-items: center; /* Vertically center elements */
-  justify-content: space-between; /* Distribute space between logo and menu */
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
 }
 
 .logo {
-  font-size: 1.5rem; /* Adjust logo font size */
-  font-weight: bold; /* Make logo text bold */
-  text-decoration: none; /* Remove underline from logo link */
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
 .nav-menu {
-  display: flex; /* Arrange menu items horizontally */
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  display: flex;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .nav-menu li {
-  margin-left: 1.5rem; /* Add spacing between menu items */
+  margin-left: 1.5rem; 
 }
 
 .nav-menu a {
-  color: #fff; /* Text color for menu links */
-  text-decoration: none; /* Remove underline from links */
-  padding: 0.5rem 1rem; /* Add padding for menu items */
-  border-radius: 5px; /* Add rounded corners to links */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  color: #fff; 
+  text-decoration: none; 
+  padding: 0.5rem 1rem; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
 }
 
 .nav-menu a:hover {
-  background-color: #17202a; /* Change background color on hover */
+  background-color: #17202a; 
 }

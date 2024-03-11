@@ -9,8 +9,8 @@ function App() {
     return (
     <>
         {/* <Home />
-        <ToDoList />*/}
-        <PomodoroTimer />
+        <ToDoList />
+        <PomodoroTimer />*/}
         <NavBar />
     </>
     );
