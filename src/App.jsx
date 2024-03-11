@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import React from 'react';
-import Home from './Home'
-import ToDoList from './ToDoList';
-import PomodoroTimer from './Pomodoro';
-import NavBar from './NavBar';
+import Home from './Home.jsx'
+import ToDoList from './ToDoList.jsx';
+import PomodoroTimer from './Pomodoro.jsx';
+import NavBar from './NavBar.jsx'
 
 function App() {
     return (
     <>
-        {/* <Home />
+        {/*<Home />
         <ToDoList />
-        <PomodoroTimer />*/}
-        <NavBar />
+    <PomodoroTimer />*/}
+        <NavBar></NavBar>
     </>
     );
 }

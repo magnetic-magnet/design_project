@@ -1,19 +1,38 @@
 import React from 'react';
-import { NavLink }  from 'react-router-dom'; // Import for navigation links
+import { Link, BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import Home from './Home';
+import ToDoList from './ToDoList';
+import PomodoroTimer from './Pomodoro';
+import './NavBar.css';
 
-const Navbar = () => {
+function NavigationItem({ to, label }) {
   return (
-    <nav className="navbar">
-      <div className="container"> {/* Container for better layout */}
-        <NavLink to="/" className="logo">Your Logo</NavLink> {/* Link to your homepage */}
-        <ul className="nav-menu">
-          <li><NavLink to="/">About</NavLink></li>
-          <li><NavLink to="/">Contact</NavLink></li>
-          {/* Add more navigation links here */}
-        </ul>
-      </div>
-    </nav>
+    <li>
+      <NavLink to={to} activeClassName="active">{label}</NavLink>
+    </li>
   );
 }
 
-export default Navbar;
+function NavBar() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul className="navbar">
+            <NavigationItem to="/" label="Home" />
+            <NavigationItem to="/todolist" label="ToDo List" />
+            <NavigationItem to="/contact" label="Contact" />
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/todolist" element={<ToDoList />} />
+          <Route path="/contact" element={<PomodoroTimer />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default NavBar;
